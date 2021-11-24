@@ -1,0 +1,136 @@
+// 设置主要样式
+// 设置字体
+@font-face {
+    font-family: '思源黑体L';
+    src        : url('/src/static/字体/SourceHanSansCN-Light.otf');
+}
+
+@font-face {
+    font-family: '思源黑体R';
+    src        : url('/src/static/字体/SourceHanSansCN-Regular.otf');
+}
+
+.ThemeInit {
+    font            : 12px/1.5 '思源黑体L', sans-serif;
+    width           : 1160px;
+    height          : 850px;
+    background-color: white;
+    border-radius   : 5px;
+    overflow        : auto;
+}
+
+// 导航条
+.title-nav {
+    display                   : flex;
+    height                    : 64px;
+    width                     : 100%;
+    background-color          : #414157;
+    border-radius             : 5px;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius: 0;
+
+    // 设置每一个导航
+    li {
+        line-height: 64px;
+        font-size  : 24px;
+
+        a {
+            color              : white;
+            padding            : 0 30px;
+            border-right       : 1px solid rgba(255, 255, 255, 0.3);
+            // background-color: red;
+        }
+
+        // 滑过a标签样式
+        a:hover {
+            border-right    : 1px solid #fdde5e;
+            background-color: #fdde5e;
+            color           : #414157;
+            height          : 100%;
+            display         : block;
+        }
+    }
+
+    // 取消最后一个竖线
+    li:last-child a {
+        border-right: 1px solid transparent;
+    }
+}
+
+// 设置文章内容
+.text {
+    position: relative;
+    //    设置每一行的样式
+    li {
+        position     : relative;
+        // 设置下边框
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        height       : 80px;
+        width        : 100%;
+        padding      : 0 30px;
+    }
+
+    // 标题
+    .mini_title{
+        display: flex;
+    }
+    .text_li {
+        margin-top: 10px;
+        font-size : 30px;
+
+        a {
+            font-family: '思源黑体R';
+            color      : #414157;
+        }
+    }
+
+    // 内容
+    .mini_text p {
+        color        : #626262;
+        width        : 850px;
+        font-size    : 20px;
+        white-space  : nowrap;
+        overflow     : hidden;
+        text-overflow: ellipsis;
+        text-indent  : 1em;
+        margin-bottom: 10px;
+        margin-top: -15px;
+    }
+
+    // 设置时间显示位置
+    .Ctime {
+        font-size: 16px;
+        position : absolute;
+        bottom   : 0px;
+        color    : #626262;
+        right    : 100px;
+    }
+
+    // 回帖图标
+    .reply-img {
+        width: 60px;
+        height: 60px;
+        display: block;
+        // background: #000;
+        font-size       : 20px;
+        font-family     : '思源黑体R';
+        background-image: url('../../回帖数背景.png');
+        background-size: 60px;
+        background-position: 0px 0px;
+        line-height: 60px;
+        text-align: center;
+        color:#626262;
+        // 定位
+        position: relative;
+        top: -10px;
+        margin-left: 20px;
+    }
+}
+
+// 加载更多
+.loaded {
+    text-align: center;
+    margin    : 20px 0;
+    font-size : 16px;
+    color     : #626262;
+}
