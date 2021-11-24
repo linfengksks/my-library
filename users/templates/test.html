@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试用</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" action="http://127.0.0.1:8000/user/post_por">
+    {% csrf_token %}
+    <input type="file" name="file1">
+    <input type="submit" value="点击上传">
+
+</form>
+</body>
+</html>
