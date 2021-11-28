@@ -1,8 +1,10 @@
 <template>
-  <div class="ThemeInit Theme">
+  <div class="ThemeInit">
     <ul class="title-nav">
-      <li class="host_li"><a href="#">今日热帖</a></li>
-      <li @click.prevent="sortData('newest')"><a href="#">最新</a></li>
+      <li @click.prevent="sortHost()">
+        <a class="a-active" href="#">今日热帖</a>
+      </li>
+      <li @click.prevent="sortDataTime()"><a href="#">最新</a></li>
       <li><a href="#">收藏</a></li>
       <li>
         <router-link class="createBar" to="createBar"> 创建主题 </router-link>
@@ -24,8 +26,7 @@
             {{ text.title }}
             <!-- 获取回帖数并显示当前回帖数 -->
             <div class="reply-img">
-              20
-              <!-- <img src="../static/回帖数背景.png" alt="回帖图标" /> -->
+              {{ text.reply_num }}
             </div>
           </div>
         </router-link>
@@ -82,6 +83,18 @@ export default {
             }
           );
       }
+    },
+    // 通过操作数据来排序
+    sortDataTime() {
+      this.texts.sort((a, b) => {
+        return a.created_time < b.created_time ? 1 : -1;
+      });
+    },
+    // 通过回帖数来排序
+    sortHost() {
+      this.texts.sort((a, b) => {
+        return a.reply_num < b.reply_num ? 1 : -1;
+      });
     },
     // 屏蔽图片标签
     hidden_img(text) {
@@ -152,5 +165,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

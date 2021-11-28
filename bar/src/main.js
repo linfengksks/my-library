@@ -5,6 +5,8 @@ import VueRouter from "vue-router";
 import VueCropper from 'vue-cropper'
 //引入store
 import store from './store/index'
+// 引入图标字体
+import 'font-awesome/css/font-awesome.css'
 //使用插件
 Vue.use(VueRouter)
 Vue.prototype.$server = 'http://127.0.0.1:8000/'

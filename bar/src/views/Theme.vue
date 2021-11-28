@@ -1,5 +1,5 @@
 <template>
-    <div class="Theme">
+    <div class="Theme InfoSet">
         <img class="mxd_icon" :src="'/django/media/'+barData.portrait" width="150" height="150">
         <span class="bar_data">
             <p class="bar_title">{{barData.bar_name}}</p>

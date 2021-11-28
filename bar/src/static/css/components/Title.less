@@ -1,0 +1,130 @@
+// Title
+// 通用样式
+.Title {
+    width                  : 1600px;
+    height                 : 100px;
+    background-color       : white;
+    margin                 : 0 auto;
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+    position               : relative;
+    display                : flex;
+    align-items            : center;
+    justify-content        : space-between;
+}
+
+// 设置左边LOGO部分
+.left-logo {
+    margin-left: 76px;
+    display    : flex;
+    align-items: center;
+
+    // 设置搜索框
+    .search-bar {
+        margin-left: 20px;
+        display    : flex;
+        height     : 100px;
+        align-items: center;
+
+        //搜索框设置
+        .search-input {
+            input {
+                height: 35px;
+            }
+        }
+
+        // 设置按钮
+        .search-but {
+
+            // 设置按钮1
+            .el-button:first-child {
+                background-color: #fdde5e;
+                color           : #414157;
+                width           : 92px;
+                height          : 35px;
+                position        : relative;
+                left            : -5px;
+                border-radius   : 0;
+                border          : none;
+
+                span {
+                    display    : block;
+                    width      : 92px;
+                    height     : 35px;
+                    line-height: 35px;
+                    text-align : center;
+                    position   : absolute;
+                    top        : 0;
+                    left       : 0;
+                }
+
+                // 经过按钮1
+                &:hover {
+                    background-color: darken(#fdde5e, 20%);
+                }
+            }
+
+            // 设置按钮2
+            .el-button:last-child {
+                background-color          : #414157;
+                color                     : #fff;
+                width                     : 92px;
+                height                    : 35px;
+                position                  : relative;
+                left                      : -20px;
+                border-radius             : 0;
+                border-top-right-radius   : 5px;
+                border-bottom-right-radius: 5px;
+                border                    : none;
+
+                span {
+                    display    : block;
+                    width      : 92px;
+                    height     : 35px;
+                    line-height: 35px;
+                    text-align : center;
+                    position   : absolute;
+                    top        : 0;
+                    left       : 0;
+                }
+
+                // 经过按钮2
+                &:hover {
+                    background-color: darken(#414157, 20%);
+                }
+            }
+        }
+
+    }
+
+    // LOGO
+    .logo-wrapper {
+        height  : 100%;
+        overflow: hidden;
+    }
+
+}
+
+// 右边导航部分
+.right-nav {
+    .top-nav {
+        width      : 700px;
+        display    : flex;
+        font-size  : 20px;
+        font-family: '思源黑体R';
+        justify-content: space-evenly;
+        // 设置字体颜色
+        a {
+            color: #414157;
+        }
+
+        // 设置图标
+        .fa {
+            color       : #414157;
+            font-size   : 12px;
+            margin-right: 5px;
+            position: relative;
+            top: -3px;
+        }
+    }
+}

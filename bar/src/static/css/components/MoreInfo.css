@@ -1,0 +1,58 @@
+.MoreInfo {
+  font-family: '思源黑体R';
+  font-size: 20px;
+  width: 400px;
+  height: 545px;
+  color: #414157;
+  background-color: white;
+  border-radius: 5px;
+}
+.follow-bar {
+  padding: 0 25px;
+}
+.follow-bar .title1 {
+  position: relative;
+  top: 15px;
+}
+.follow-bar .bar-ul {
+  display: flex;
+  flex-wrap: wrap;
+  height: 76px;
+  margin: 23px 0;
+  margin-top: 38px;
+  justify-content: space-between;
+}
+.follow-bar .bar-wrapper {
+  width: 106px;
+  height: 28px;
+  border: 1px solid #414157;
+}
+.follow-bar .bar-wrapper .bar {
+  width: 8%;
+  height: 100%;
+  background-color: #64648c;
+}
+.follow-bar .bar-wrapper .bar-title {
+  width: 106px;
+  line-height: 28px;
+  text-align: center;
+}
+.follow-bar .mores {
+  width: 200px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #414157;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.ad {
+  height: 324px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=./MoreInfo.css.map */

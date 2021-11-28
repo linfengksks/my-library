@@ -1,5 +1,5 @@
 <template>
-    <div class="InfoSet Theme">
+    <div class="BarSet InfoSet">
         <div class="Info"><p class="title">设置主题详细资料</p>
             <!-- 预览头像 -->
             <p><img class="portrait" :src="lookPortrait()" alt="头像" width="115" height="115"></p>

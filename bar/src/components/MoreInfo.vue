@@ -1,21 +1,73 @@
 <template>
   <div class="MoreInfo">
-    <p class="title1">爱逛的主题</p>
-    <ul class="bar_ul">
-      <li class="bar_name"><span class="purple"></span><span>冒险岛</span></li>
-      <li class="bar_name">
-        <span class="purple"></span><span>刀剑神域</span>
-      </li>
-      <li class="bar_name"><span class="purple"></span><span>爱奇艺</span></li>
-    </ul>
-    <ul class="bar_ul">
-      <li class="bar_name"><span class="purple"></span><span>冒险岛</span></li>
-      <li class="bar_name">
-        <span class="purple"></span><span>刀剑神域</span>
-      </li>
-      <li class="bar_name"><span class="purple"></span><span>爱奇艺</span></li>
-    </ul>
-    <p class="mores">查看更多</p>
+    <div class="follow-bar">
+      <!-- 标题 -->
+      <h1 class="title1">爱逛的主题</h1>
+      <!-- 主题列表 -->
+      <ul class="bar-ul">
+        <li class="bar-name">
+          <!-- 设置外框 -->
+          <div class="bar-wrapper">
+            <!-- 设置内框 -->
+            <div class="bar">
+              <!-- 设置名字 -->
+              <div class="bar-title">冒险岛</div>
+            </div>
+          </div>
+        </li>
+        <li class="bar-name">
+          <!-- 设置外框 -->
+          <div class="bar-wrapper">
+            <!-- 设置内框 -->
+            <div class="bar">
+              <!-- 设置名字 -->
+              <div class="bar-title">冒险岛</div>
+            </div>
+          </div>
+        </li>
+        <li class="bar-name">
+          <!-- 设置外框 -->
+          <div class="bar-wrapper">
+            <!-- 设置内框 -->
+            <div class="bar">
+              <!-- 设置名字 -->
+              <div class="bar-title">冒险岛</div>
+            </div>
+          </div>
+        </li>
+        <li class="bar-name">
+          <!-- 设置外框 -->
+          <div class="bar-wrapper">
+            <!-- 设置内框 -->
+            <div class="bar">
+              <!-- 设置名字 -->
+              <div class="bar-title">冒险岛</div>
+            </div>
+          </div>
+        </li>
+        <li class="bar-name">
+          <!-- 设置外框 -->
+          <div class="bar-wrapper">
+            <!-- 设置内框 -->
+            <div class="bar">
+              <!-- 设置名字 -->
+              <div class="bar-title">冒险岛</div>
+            </div>
+          </div>
+        </li>
+        <li class="bar-name">
+          <!-- 设置外框 -->
+          <div class="bar-wrapper">
+            <!-- 设置内框 -->
+            <div class="bar">
+              <!-- 设置名字 -->
+              <div class="bar-title">冒险岛</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="mores">查看更多</div>
+    </div>
     <div class="ad">
       <img src="../static/广告1.png" />
       <img src="../static/广告2.png" />
@@ -24,13 +76,15 @@
 </template>
 
 <script>
+// 导入css
+import "../static/css/components/MoreInfo.css";
 export default {
   name: "MoreInfo",
 };
 </script>
 
 <style scoped>
-* {
+/* * {
   font-family: 思源黑体R;
   font-size: 20px;
 }
@@ -95,5 +149,5 @@ export default {
 .bar_ul {
   position: relative;
   left: 20px;
-}
+} */
 </style>

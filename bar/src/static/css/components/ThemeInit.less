@@ -11,16 +11,17 @@
 }
 
 .ThemeInit {
-    font            : 12px/1.5 '思源黑体L', sans-serif;
-    width           : 1160px;
-    height          : 850px;
-    background-color: white;
-    border-radius   : 5px;
-    overflow        : auto;
+    font               : 12px/1.5 '思源黑体L', sans-serif;
+    width              : 1160px;
+    height             : 850px;
+    background-color   : white;
+    border-radius      : 5px;
+    // overflow        : auto;
 }
 
 // 导航条
 .title-nav {
+
     display                   : flex;
     height                    : 64px;
     width                     : 100%;
@@ -41,6 +42,16 @@
             // background-color: red;
         }
 
+        // 激活效果
+        .a-active {
+            border-right          : 1px solid #fdde5e;
+            background-color      : #fdde5e;
+            color                 : #414157;
+            height                : 100%;
+            display               : block;
+            border-top-left-radius: 4px;
+        }
+
         // 滑过a标签样式
         a:hover {
             border-right    : 1px solid #fdde5e;
@@ -59,21 +70,26 @@
 
 // 设置文章内容
 .text {
+    width   : 1160px;
+    height  : 790px;
+    overflow: auto;
     position: relative;
+
     //    设置每一行的样式
     li {
         position     : relative;
         // 设置下边框
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         height       : 80px;
-        width        : 100%;
         padding      : 0 30px;
+        transition   : 0.5s;
     }
 
     // 标题
-    .mini_title{
+    .mini_title {
         display: flex;
     }
+
     .text_li {
         margin-top: 10px;
         font-size : 30px;
@@ -94,7 +110,7 @@
         text-overflow: ellipsis;
         text-indent  : 1em;
         margin-bottom: 10px;
-        margin-top: -15px;
+        margin-top   : -15px;
     }
 
     // 设置时间显示位置
@@ -103,27 +119,27 @@
         position : absolute;
         bottom   : 0px;
         color    : #626262;
-        right    : 100px;
+        right    : 30px;
     }
 
     // 回帖图标
     .reply-img {
-        width: 60px;
-        height: 60px;
-        display: block;
+        width              : 60px;
+        height             : 60px;
+        display            : block;
         // background: #000;
-        font-size       : 20px;
-        font-family     : '思源黑体R';
-        background-image: url('../../回帖数背景.png');
-        background-size: 60px;
+        font-size          : 20px;
+        font-family        : '思源黑体R';
+        background-image   : url('../../回帖数背景.png');
+        background-size    : 60px;
         background-position: 0px 0px;
-        line-height: 60px;
-        text-align: center;
-        color:#626262;
+        line-height        : 60px;
+        text-align         : center;
+        color              : #626262;
         // 定位
-        position: relative;
-        top: -10px;
-        margin-left: 20px;
+        position           : relative;
+        top                : -10px;
+        margin-left        : 20px;
     }
 }
 

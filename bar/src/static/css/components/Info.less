@@ -1,0 +1,188 @@
+// 设置全局样式
+.info {
+    width           : 400px;
+    height          : 290px;
+    background-color: #fff;
+    border-radius   : 5px;
+    position        : relative;
+    font-size       : 20px;
+    color           : #414157;
+    font-family     : '思源黑体R';
+}
+
+// 设置整个框的位置
+.user-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// 设置用户信息的外框
+.user-data-warpper {
+    width        : 300px;
+    margin       : 0 auto;
+    margin-bottom: 30px;
+}
+
+// 用户信息
+.user-data {
+    width          : 300px;
+    display        : flex;
+    justify-content: space-evenly;
+
+    // 设置头像
+    .user-img {
+        img {
+            width        : 115px;
+            border-radius: 3px;
+        }
+    }
+
+    // 设置右侧个人信息
+    .user-info {
+        display        : flex;
+        flex-direction : column;
+        // 当有空隙时
+        justify-content: space-evenly;
+        height: 110px;
+
+        // 设置图标
+        .fa-user {
+            font-size: 30px;
+            color    : #606266;
+        }
+
+        // 匿名设置
+        .user-nick-name {
+            margin-left: 10px;
+        }
+
+        // 设置等级
+        .grade {
+            display    : flex;
+            align-items: center;
+        }
+
+        // 设置硬币文字
+        .m-cur-div {
+            letter-spacing: 0.8px;
+
+        }
+
+        .m_cur {
+            margin-right: 5px;
+        }
+
+        // 设置等级背景样式
+        .grade-icon {
+            background-image: url('../../等级图标.png');
+            display         : block;
+            width           : 30px;
+            height          : 30px;
+            text-align      : center;
+            line-height     : 30px;
+            color           : #af7218;
+        }
+
+        // 设置个人信息按钮
+        .set-info-wrapper {
+            // 位置
+            position: absolute;
+            right   : 10px;
+            top     : 5px;
+
+            .set_info {
+                width      : 80px;
+                line-height: 10px;
+                font-size  : 12px;
+                position   : relative;
+
+                span {
+                    position : absolute;
+                    left     : 0;
+                    right    : 0;
+                    margin   : 0 auto;
+                    top      : 50%;
+                    transform: translateY(-50%)
+                }
+            }
+        }
+
+    }
+}
+
+// 设置个人信息2
+.user-data2 {
+    width : 260px;
+    margin: 0 auto;
+
+    // 设置排名
+    .ranking {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    // 设置等级称号
+    .grade-name {
+        display         : flex;
+        align-items     : center;
+        width           : 140px;
+        height          : 34px;
+        background-image: linear-gradient(to bottom, #79798d, #4a4a5f, #414157);
+        border-radius   : 3px;
+        color           : white;
+        font-size       : 20px;
+        text-align      : center;
+        line-height     : 34px;
+        justify-content : center;
+
+        .g-img {
+            width           : 24px;
+            height          : 24px;
+            font-size       : 15px;
+            background-image: url('../../等级图标.png');
+            text-align      : center;
+            line-height     : 24px;
+            color           : #af7217;
+            background-size : cover;
+            margin-left     : 5px;
+        }
+    }
+
+    // 设置经验
+    .progressBar-u {
+        margin-top     : 20px;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        // 设置经验条样式
+        // 设置外边框
+        .bar-warpper {
+            width        : 192px;
+            height       : 16px;
+            border-radius: 16px;
+            border       : 1px solid #f3b34f;
+            position     : relative;
+
+            // 设置中间的进度
+            .bar {
+                width           : 20%;
+                background-color: #fdde5e;
+                height          : 100%;
+                border-radius   : 16px;
+
+                // 设置文字
+                .bar-text {
+                    width      : 192px;
+                    text-align : center;
+                    font-size  : 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}

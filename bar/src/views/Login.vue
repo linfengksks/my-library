@@ -1,5 +1,5 @@
 <template>
-    <div class="cp login">
+    <div class="login eject">
         <div class="userLogin">
             <p class="title">用户名密码登录</p>
             <p><input @keydown.enter="acc_post" @blur="testing_user" class="input_text inp_user" type="text"
@@ -172,7 +172,7 @@
 
     .userLogin {
         position: relative;
-        top: 10%;
+        top: 30px;
     }
 
     .title {
@@ -237,8 +237,8 @@
     }
 
     .delete_ico {
-        position: relative;
-        float: right;
-        top: -421px;
+        position: absolute;
+        right: 0;
+        top: -30px;
     }
 </style>

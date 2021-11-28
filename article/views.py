@@ -60,8 +60,17 @@ def getArt(request):
             art = art.order_by('-updated_time')
         article_list = []
         for t in art:
-            t.id = {'id': t.id, 'title': t.title, 'content': t.content, 'user_id': t.user_id, 'bar_id': t.bar_id,
-                    'created_time': str(t.created_time)}
+            # print(len(Reply.objects.filter(article_id=t.id, is_active=True)))
+            t.id = {'id': t.id,
+                    'title': t.title,
+                    'content': t.content,
+                    'user_id': t.user_id,
+                    'bar_id': t.bar_id,
+                    'created_time': str(t.created_time),
+                    # 获取回帖数
+                    'reply_num': len(Reply.objects.filter(article_id=t.id, is_active=True))
+                    }
+
             article_list.append(t.id)
         data['article_list'] = article_list
         data['message'] = '获取文章成功'
